@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url('/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #eee;
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    padding: 8px;
+    height: 100vh;
+    overflow-y: hidden;
+}
