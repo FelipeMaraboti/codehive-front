@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🐝 CodeHive
 
-## Getting Started
+O **CodeHive** é uma aplicação desenvolvida para facilitar a vida de desenvolvedores, permitindo salvar, organizar e exportar snippets de código diretamente para o VS Code, evitando perda de trechos importantes e otimizando o fluxo de trabalho.
 
-First, run the development server:
+> 🚧 **Este projeto está em fase de desenvolvimento e pode sofrer alterações.**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Funcionalidades
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Salvar snippets de código com título, descrição e linguagem
+-  Organizar por categorias ou tags personalizadas
+-  Exportar trechos direto para o VS Code com 1 clique
+-  Histórico de snippets salvos
+-  Busca rápida por nome ou conteúdo
+-  Integração com uma extensão oficial do VS Code
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧰 Tecnologias Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Frontend**
 
-## Learn More
+- React.js
+- Next.js
+- Tailwind CSS
 
-To learn more about Next.js, take a look at the following resources:
+### **Backend**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Node.js com Express
+- PostgreSQL
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **Outros**
 
-## Deploy on Vercel
+- Extensão oficial para o VS Code *(em desenvolvimento)*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 💡 Como usar
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Acesse o [CodeHive](https://) e crie sua conta ou faça login.
+2. Instale a **extensão oficial do CodeHive no VS Code** *(Em breve disponível no Marketplace)*.
+3. Abra o VS Code e vá até a aba da extensão CodeHive.
+4. Faça a conexão na extensão com sua conta CodeHive.
+5. Agora você pode:
+   - 🔍 Buscar e visualizar seus snippets diretamente no VS Code.
+   - 📤 Inserir snippets no código com 1 clique.
+   - 💾 Criar, editar ou excluir snippets sincronizados com o app web.
+
+## 👥 Contribuidores
+
+- [Felipe Sabino Maraboti](https://github.com/felipemaraboti) - Desenvolvimento Frontend e idealização do projeto
+- [Enock Júnior](https://github.com/memellin) - Desenvolvimento Backend e integração com o banco de dados
+
+---
+
+> Feito com 💙 por devs que cansaram de perder aquele código que deu trabalho demais pra escrever.
