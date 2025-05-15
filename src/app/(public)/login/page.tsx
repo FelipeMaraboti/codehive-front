@@ -1,6 +1,7 @@
 'use client'
 
-import { signIn } from "next-auth/react"
+import { signIn } from "next-auth/react";
+import Link from 'next/link';
 
 export default function Login() {
   return (
@@ -10,10 +11,10 @@ export default function Login() {
       </nav>
       <div className="h-screen flex items-center justify-center">
         <div className="w-[300px] h-[315px] p-2 rounded-[10px] bg-[#d9d9d9] bg-opacity-[5%]">
-          <a href="/" className="flex items-center justify-left pl-2 pt-2 gap-2 ">
+          <Link href="/" className="flex items-center justify-left pl-2 pt-2 gap-2 ">
             <img src="/arrow_back.png" alt="arrow_back.png" />
             <p className="text-[12px]">Go back</p>
-          </a>
+          </Link>
           <div className="flex flex-col items-center justify-center gap-0 mt-6">
             <h1 className="text-[30px] font-inter bg-gradient-to-r from-[#FFF70C] to-[#EEE] bg-clip-text text-transparent ">Wellcome!</h1>
             <p className="text-[18px] font-inter">Thanks for using our app</p>
