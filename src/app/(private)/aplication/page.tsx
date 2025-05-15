@@ -35,8 +35,7 @@ export default function Aplication() {
           </div>
           <div className="h-[150px] w-[960px] bg-[#d9d9d9] bg-opacity-5 overflow-auto">
             <p className="p-4">
-              "
-              function quadraticRoot(a, b, c) &#123;"
+              function quadraticRoot(a, b, c) &#123;
             </p>
           </div>
           <div className="w-[960px] h-[30px] mt-6 flex gap-4 justify-end">
