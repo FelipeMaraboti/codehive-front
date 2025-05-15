@@ -5,12 +5,12 @@ type FetchOptions<T> = {
     body?: T | null;
 };
 
-export function useFetch<T>(url: string) {
+export function useFetch<TResponse = unknown, TBody = unknown>(url: string) {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
-    const [data, setData] = useState<any>(null);
+    const [data, setData] = useState<TResponse | null>(null);
 
-    const request = async (options: FetchOptions<T> = {}) => {
+    const request = async (options: FetchOptions<TBody> = {}) => {
         setLoading(true);
         setError(null);
 
@@ -23,11 +23,15 @@ export function useFetch<T>(url: string) {
                 body: options.body ? JSON.stringify(options.body) : null,
             });
 
-            const result = await response.json();
+            const result = (await response.json()) as TResponse;
             setData(result);
             return result;
-        } catch (err: any) {
-            setError(err.message || "Erro na requisição");
+        } catch (err: unknown) {
+            if (err instanceof Error) {
+                setError(err.message);
+            } else {
+                setError("Erro na requisição");
+            }
         } finally {
             setLoading(false);
         }
