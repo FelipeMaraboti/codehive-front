@@ -1,3 +1,4 @@
+/* 
 import { NextResponse, type MiddlewareConfig, type NextRequest } from "next/server"
 
 const publicRoutes = [
@@ -41,3 +42,4 @@ export const config: MiddlewareConfig = {
         '/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)',
       ],
 }
+*/
